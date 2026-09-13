@@ -16,7 +16,8 @@
   <!-- Header Navigation -->
   <header class="navbar scrolled" id="main-navbar">
     <div class="container nav-container">
-      <a href="index.html" class="brand-logo">
+      <a href="index.html" class="brand-logo" aria-label="Jarecha Investments Home">
+        <img src="images/logo.png" alt="Jarecha Investments Ltd corporate brand logo" class="brand-logo-img" />
         <span>JARECHA</span>
         <span class="brand-dot"></span>
       </a>
@@ -56,29 +57,29 @@
 
   <!-- Mobile Drawer -->
   <div class="mobile-drawer" id="mobile-drawer">
-    <a href="index.html">Home</a>
-    <a href="about.html">About Jarecha</a>
-    <a href="services.html">Services & Capabilities</a>
-    <a href="index.html#why-us">Why Jarecha</a>
-    <a href="index.html#industries">Sectors & Industries</a>
-    <a href="index.html#clients">Client Portfolio</a>
-    <a href="index.html#compliance">Statutory Compliance</a>
-    <a href="contact.html">Contact & Consultations</a>
+    <a href="index.html" class="mobile-nav-link">Home</a>
+    <a href="about.html" class="mobile-nav-link">About Jarecha</a>
+    <a href="services.html" class="mobile-nav-link active">Services & Capabilities</a>
+    <a href="index.html#why-us" class="mobile-nav-link">Why Jarecha</a>
+    <a href="index.html#industries" class="mobile-nav-link">Sectors & Industries</a>
+    <a href="index.html#clients" class="mobile-nav-link">Client Portfolio</a>
+    <a href="index.html#compliance" class="mobile-nav-link">Statutory Compliance</a>
+    <a href="contact.html" class="mobile-nav-link">Contact & Consultations</a>
   </div>
 
   <main style="padding-top: 5rem;">
     <!-- Hero Banner -->
     <section class="section-padding bg-black" style="padding-top: 6rem; padding-bottom: 5rem;">
       <div class="container">
-        <div class="badge badge-yellow">
+        <div class="badge badge-yellow reveal-on-scroll">
           <span class="badge-dot"></span>
           <span>Capability Matrix</span>
         </div>
-        <h1 class="heading-display text-white">
+        <h1 class="heading-display text-white reveal-on-scroll">
           FOUR INTEGRATED<br />
           <span class="text-yellow">OPERATIONAL DIVISIONS.</span>
         </h1>
-        <p style="font-size: 1.25rem; color: var(--muted); max-width: 720px; line-height: 1.6;">
+        <p class="reveal-on-scroll" style="font-size: 1.25rem; color: var(--muted); max-width: 720px; line-height: 1.6;">
           End-to-end multi-disciplinary solutions engineered to commercial standards across Zambia. Click any service below to inspect full specifications.
         </p>
       </div>
@@ -87,14 +88,14 @@
     <!-- DIVISION 01 (NAVY) -->
     <section id="tech" class="section-padding bg-navy">
       <div class="container">
-        <div class="service-group-row">
+        <div class="service-group-row reveal-on-scroll">
           <div>
             <div class="service-group-num">01</div>
             <h2 class="service-group-title">Technology & Digital Systems</h2>
             <p class="service-group-desc">
               High-bandwidth structured fiber cabling, enterprise server room architecture, virtualization, software platforms, and managed SLAs.
             </p>
-            <div class="service-items-list">
+            <div class="service-items-list stagger-group">
               <div class="service-item-row" data-service="enterprise-networking">
                 <span class="service-item-name">Enterprise Networking & Fiber Optic Cabling</span>
                 <span class="service-item-arrow">View Scope →</span>
@@ -113,8 +114,12 @@
               </div>
             </div>
           </div>
-          <div class="service-img-wrapper">
-            <img src="images/tech-digital.jpg" alt="Technology and Digital Systems" />
+          <div class="service-img-wrapper has-secondary">
+            <img src="images/laptops-and-accessories.png" alt="Jarecha enterprise ICT equipment and laptops" loading="lazy" />
+            <div class="service-secondary-thumb">
+              <img src="images/laptops-and-accessories-2.png" alt="Jarecha computing accessories and workplace infrastructure" loading="lazy" />
+              <span class="service-secondary-tag">Workplace Tech</span>
+            </div>
           </div>
         </div>
       </div>
@@ -123,14 +128,14 @@
     <!-- DIVISION 02 (LIGHT) -->
     <section id="engineering" class="section-padding bg-light">
       <div class="container">
-        <div class="service-group-row reverse">
+        <div class="service-group-row reverse reveal-on-scroll">
           <div>
             <div class="service-group-num" style="color:var(--navy);">02</div>
             <h2 class="service-group-title" style="color:var(--navy);">Engineering & Infrastructure</h2>
             <p class="service-group-desc" style="color:rgba(7,26,47,0.75);">
               EIZ-certified heavy industrial power distribution, commercial solar backup arrays with LiFePO4 storage, and precision civil telecommunications works.
             </p>
-            <div class="service-items-list">
+            <div class="service-items-list stagger-group">
               <div class="service-item-row" data-service="electrical-power" style="background:#ffffff;border:1px solid var(--card-border-light);">
                 <span class="service-item-name" style="color:var(--navy);">Commercial & Industrial Electrical Power</span>
                 <span class="service-item-arrow" style="color:var(--navy);">View Scope →</span>
@@ -145,8 +150,12 @@
               </div>
             </div>
           </div>
-          <div class="service-img-wrapper">
-            <img src="images/engineering.jpg" alt="Engineering and Infrastructure" />
+          <div class="service-img-wrapper has-secondary">
+            <img src="images/solar-system.png" alt="Jarecha commercial solar power systems and engineering infrastructure" loading="lazy" />
+            <div class="service-secondary-thumb">
+              <img src="images/solar-systems-2.png" alt="Jarecha backup solar arrays and power engineering" loading="lazy" />
+              <span class="service-secondary-tag">Solar Arrays</span>
+            </div>
           </div>
         </div>
       </div>
@@ -155,14 +164,14 @@
     <!-- DIVISION 03 (NAVY) -->
     <section id="security" class="section-padding bg-navy">
       <div class="container">
-        <div class="service-group-row">
+        <div class="service-group-row reveal-on-scroll">
           <div>
             <div class="service-group-num">03</div>
             <h2 class="service-group-title">Security & Smart Office</h2>
             <p class="service-group-desc">
               AI optical surveillance with automated license plate recognition, biometric smart turnstiles, clean-agent FM-200 fire suppression, and building automation.
             </p>
-            <div class="service-items-list">
+            <div class="service-items-list stagger-group">
               <div class="service-item-row" data-service="cctv-surveillance">
                 <span class="service-item-name">IP CCTV Surveillance & AI Analytics</span>
                 <span class="service-item-arrow">View Scope →</span>
@@ -178,7 +187,70 @@
             </div>
           </div>
           <div class="service-img-wrapper">
-            <img src="images/security.jpg" alt="Security and Smart Office" />
+            <img src="images/network-cameras.png" alt="Jarecha IP network cameras, CCTV surveillance, and access control" loading="lazy" />
+          </div>
+        </div>
+
+        <!-- Modern Workplace & Smart Office Showcase -->
+        <div class="smart-office-showcase reveal-on-scroll" style="margin-top: 4rem;">
+          <div class="office-showcase-header">
+            <div>
+              <span class="office-showcase-tag">Division Capability Portfolio</span>
+              <h3 class="office-showcase-title">Smart Office & Executive Workplace Solutions</h3>
+            </div>
+            <p class="office-showcase-subtitle">
+              Turnkey corporate workplace procurement — ergonomic modular desks, executive boardroom suites, collaborative breakout hubs, and acoustic workspace furnishings.
+            </p>
+          </div>
+          <div class="office-gallery-grid stagger-group">
+            <div class="office-card">
+              <img src="images/office-furniture.jpeg" alt="Jarecha executive boardroom workstation and modern conference suite" class="office-card-img" loading="lazy" />
+              <div class="office-card-overlay"></div>
+              <div class="office-card-meta">
+                <div class="office-card-title">Executive Boardroom Suites</div>
+                <div class="office-card-spec">Conference tables & leather seating</div>
+              </div>
+            </div>
+            <div class="office-card">
+              <img src="images/office-furniture-2.jpeg" alt="Jarecha modular open-plan ergonomic workstation pods" class="office-card-img" loading="lazy" />
+              <div class="office-card-overlay"></div>
+              <div class="office-card-meta">
+                <div class="office-card-title">Ergonomic Workstation Pods</div>
+                <div class="office-card-spec">Open-plan modular desking & cable management</div>
+              </div>
+            </div>
+            <div class="office-card">
+              <img src="images/office-furniture-3.jpeg" alt="Jarecha collaborative team breakout furniture and soft seating" class="office-card-img" loading="lazy" />
+              <div class="office-card-overlay"></div>
+              <div class="office-card-meta">
+                <div class="office-card-title">Collaborative Breakout Hubs</div>
+                <div class="office-card-spec">Acoustic seating & informal meeting pods</div>
+              </div>
+            </div>
+            <div class="office-card">
+              <img src="images/office-furniture-4.jpeg" alt="Jarecha managerial office desk suite and credenza storage" class="office-card-img" loading="lazy" />
+              <div class="office-card-overlay"></div>
+              <div class="office-card-meta">
+                <div class="office-card-title">Managerial Office Desking</div>
+                <div class="office-card-spec">Veneer executive desks & credenza storage</div>
+              </div>
+            </div>
+            <div class="office-card">
+              <img src="images/office-furniture-5.jpeg" alt="Jarecha corporate reception counter and welcoming lounge furniture" class="office-card-img" loading="lazy" />
+              <div class="office-card-overlay"></div>
+              <div class="office-card-meta">
+                <div class="office-card-title">Reception & Lounge Solutions</div>
+                <div class="office-card-spec">Bespoke front counters & guest seating</div>
+              </div>
+            </div>
+            <div class="office-card">
+              <img src="images/office-furniture-6.png" alt="Jarecha high-density archival storage and office filing systems" class="office-card-img" loading="lazy" />
+              <div class="office-card-overlay"></div>
+              <div class="office-card-meta">
+                <div class="office-card-title">Smart Archival & Storage Systems</div>
+                <div class="office-card-spec">Steel tambour units & secure credenzas</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -187,14 +259,14 @@
     <!-- DIVISION 04 (BLACK) -->
     <section id="business" class="section-padding bg-black">
       <div class="container">
-        <div class="service-group-row reverse">
+        <div class="service-group-row reverse reveal-on-scroll">
           <div>
             <div class="service-group-num">04</div>
             <h2 class="service-group-title">Business & Capacity Building</h2>
             <p class="service-group-desc">
               ZPPA-compliant direct institutional sourcing of OEM server hardware, PPE, electrical parts, and customized professional workforce training.
             </p>
-            <div class="service-items-list">
+            <div class="service-items-list stagger-group">
               <div class="service-item-row" data-service="corporate-procurement">
                 <span class="service-item-name">Corporate Hardware & Equipment Procurement</span>
                 <span class="service-item-arrow">View Scope →</span>
@@ -205,8 +277,59 @@
               </div>
             </div>
           </div>
-          <div class="service-img-wrapper">
-            <img src="images/business.jpg" alt="Business and Capacity Building" />
+          <div class="service-img-wrapper has-secondary">
+            <img src="images/branding-advertisement.jpeg" alt="Jarecha corporate procurement and commercial branding advertisement" loading="lazy" />
+            <div class="service-secondary-thumb">
+              <img src="images/branding-advertising.png" alt="Jarecha brand marketing and commercial campaign execution" loading="lazy" />
+              <span class="service-secondary-tag">Branding</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Corporate Branding & Promotional Advertisement Solutions -->
+        <div class="smart-office-showcase reveal-on-scroll" style="margin-top: 4rem;">
+          <div class="office-showcase-header">
+            <div>
+              <span class="office-showcase-tag">Division Capability Portfolio</span>
+              <h3 class="office-showcase-title">Corporate Branding, Advertising & Promotional Solutions</h3>
+            </div>
+            <p class="office-showcase-subtitle">
+              Comprehensive institutional brand identity execution, commercial marketing collateral, precision vehicle wraps, and large-format outdoor advertisement displays.
+            </p>
+          </div>
+          <div class="branding-showcase-grid stagger-group">
+            <div class="branding-card">
+              <img src="images/branding-advertisement.jpeg" alt="Jarecha corporate branding identity design and branded executive collateral" class="branding-card-img" loading="lazy" />
+              <div class="branding-card-overlay"></div>
+              <div class="branding-card-meta">
+                <div class="branding-card-title">Corporate Identity & Media</div>
+                <div class="branding-card-spec">Executive print, annual reports & stationary</div>
+              </div>
+            </div>
+            <div class="branding-card">
+              <img src="images/branding-advertising.png" alt="Jarecha high-impact commercial advertising campaign and marketing display" class="branding-card-img" loading="lazy" />
+              <div class="branding-card-overlay"></div>
+              <div class="branding-card-meta">
+                <div class="branding-card-title">Commercial Campaign Advertising</div>
+                <div class="branding-card-spec">Large-format display & brand promotions</div>
+              </div>
+            </div>
+            <div class="branding-card">
+              <img src="images/branding-and-advertisement-3.jpeg" alt="Jarecha outdoor architectural signage and corporate promotional installation" class="branding-card-img" loading="lazy" />
+              <div class="branding-card-overlay"></div>
+              <div class="branding-card-meta">
+                <div class="branding-card-title">Outdoor Signage & Visual Branding</div>
+                <div class="branding-card-spec">Illuminated 3D pylons, signage & directional markers</div>
+              </div>
+            </div>
+            <div class="branding-card">
+              <img src="images/branding-and-advertisement-4.jpeg" alt="Jarecha branded fleet graphics, promotional merchandise, and trade exhibit kits" class="branding-card-img" loading="lazy" />
+              <div class="branding-card-overlay"></div>
+              <div class="branding-card-meta">
+                <div class="branding-card-title">Fleet Graphics & Exhibition Displays</div>
+                <div class="branding-card-spec">Vehicle fleet branding & institutional exhibit displays</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -222,6 +345,10 @@
           <line x1="6" y1="6" x2="18" y2="18"></line>
         </svg>
       </button>
+
+      <div class="modal-image-wrapper">
+        <img id="modal-img" src="images/laptops-and-accessories.png" alt="Jarecha Service Specification" class="modal-img" />
+      </div>
 
       <div id="modal-category" style="display:inline-block;padding:0.25rem 0.75rem;background:rgba(13,41,69,0.7);border:1px solid rgba(255,255,255,0.1);border-radius:4px;font-size:0.6875rem;font-family:monospace;color:var(--yellow);text-transform:uppercase;margin-bottom:1rem;">
         Service Division
@@ -254,9 +381,12 @@
 
   <footer class="site-footer">
     <div class="container">
-      <div class="footer-bottom">
-        <div>© 2026 Jarecha Investments Limited. All Rights Reserved. Republic of Zambia.</div>
-        <a href="index.html" style="color:var(--yellow);font-weight:700;">Back to Home →</a>
+      <div class="footer-bottom" style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1.5rem;">
+        <div style="display:flex;align-items:center;gap:0.85rem;">
+          <img src="images/logo-2.jpeg" alt="Jarecha Investments Ltd corporate mark" class="footer-logo-img" />
+          <span style="font-size:0.85rem;color:var(--muted);">© 2026 Jarecha Investments Limited. Plot No. 513 Kwacha Street, Behind Permanent House, Town Centre, Chingola, Zambia.</span>
+        </div>
+        <a href="index.html" style="color:var(--yellow);font-weight:700;font-size:0.9rem;">Back to Home →</a>
       </div>
     </div>
   </footer>
